@@ -1,15 +1,15 @@
-import { defineConfig } from 'cypress';
+import { defineConfig } from 'cypress'
 
 export default defineConfig({
-    e2e: {
-        baseUrl: "https://www.demoblaze.com/",
-        experimentalRunAllSpecs: true,
-        setupNodeEvents(on, config) {
-            require('@cypress/code-coverage/task')(on, config);
-            return config;
-        }
+  e2e: {
+    baseUrl: 'http://https://demoblaze.com/:3000',
+    setupNodeEvents(on, config) {
+      // plugins aqui, se necessário
     },
-    env: {
-        apiURL: "url-api"
-    }
-});
+    specPattern: 'cypress/e2e/**/*.spec.ts',
+    supportFile: 'cypress/support/e2e.ts'
+  },
+  env: {
+    apiUrl: 'api'
+  }
+})

@@ -1,8 +1,8 @@
-export class HomePage {
+class HomePage {
     // declarar elementos principais
     elements = {
-        navbar: () => cy.get(''),
-        loginLink: () => cy.get(''),
+        navbar: () => cy.get('#nava'),
+        loginLink: () => cy.get('#login2'),
         cartLink: () => cy.get(''),
         productItems: () => cy.get(''),
         categoryFilter: (category: string) => cy.contains('.list-group-item', category)
@@ -24,3 +24,5 @@ export class HomePage {
     };
 
 }
+
+export default new HomePage();

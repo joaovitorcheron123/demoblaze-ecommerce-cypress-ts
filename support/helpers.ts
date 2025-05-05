@@ -10,7 +10,7 @@ export class TestDataHelper {
     static getRandomUser(): User {
         return {
             username: `user_${Date.now()}`,
-            password: ``,
+            password: faker.internet.password(),
             email: faker.internet.email()
         };
     };

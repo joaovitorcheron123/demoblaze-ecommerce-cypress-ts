@@ -13,6 +13,10 @@
     "@faker-js/faker": "^9.7.0",
     "@types/node": "^22.15.3",
     "cypress": "^14.3.2",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "typescript": "^5.8.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "e2e/**/*.{js,ts}"
   }
 }

@@ -6,7 +6,7 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       // plugins aqui
     },
-    specPattern: 'e2e/**/*.spec.ts',
+    specPattern: 'cypress/e2e/**/*.spec.ts',
     supportFile: false
   },
   env: {
